@@ -1,0 +1,40 @@
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 40px;
+    font-weight: 700;
+    filter: invert();
+    padding-top: 40px;
+}
+
+.container h2 {
+    font-size: 30px;
+    font-weight: 600;
+    filter: invert();
+}
+
+.container img {
+    max-width: 100%;
+    width: 500px;
+    margin-top: 40px;
+}
+
+.ingredients {
+    font-size: 20px;
+    filter: invert();
+    margin: 0 50px 0 50px;
+}
+
+.extra {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.extra p {
+    font-size: 20px;
+    filter: invert();
+}

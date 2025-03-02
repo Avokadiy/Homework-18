@@ -25,13 +25,15 @@ export const BeanPage = () => {
 
             {data && (
                 <div className={style.container} style={{background: data.backgroundColor}}>
+                    <h1 style={{color: data.backgroundColor}}>{data.flavorName}</h1>
+                    <h2 style={{color: data.backgroundColor}}>{data.description}</h2>
                     <img src={data.imageUrl} alt="Bean image" />
-                    <div className={style.beanInfo}>
-                        <h1>{data.flavorName}</h1>
-                        <h2>{data.description}</h2>
-                        <p>Ingredients: {data.ingredients.map((item) => item + ', ')}</p>
-                        <p>{data.glutenFree ? 'No Gluten' : 'With Gluten'}</p>
-                        <p>{data.sugarFree ? 'No Sugar' : 'With Sugar'}</p>
+                    <p className={style.ingredients} style={{color: data.backgroundColor}}>Ingredients: {data.ingredients.map((item) => item + ', ')}</p>
+                    <div className={style.extra}>
+                        <p style={{color: data.backgroundColor}}>{data.glutenFree ? 'No Gluten' : 'With Gluten'}</p>
+                        <p style={{color: data.backgroundColor}}>{data.sugarFree ? 'No Sugar' : 'With Sugar'}</p>
+                        <p style={{color: data.backgroundColor}}>{data.kosher ? 'Kosher' : 'Not Kosher'}</p>
+                        <p style={{color: data.backgroundColor}}>{data.seasonal ? 'Seasonal' : 'Not Seasonal'}</p>
                     </div>
                 </div>
             )}
