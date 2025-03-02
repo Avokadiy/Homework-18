@@ -7,12 +7,14 @@
     font-weight: 700;
     filter: invert();
     padding-top: 40px;
+    mix-blend-mode: difference;
 }
 
 .container h2 {
     font-size: 30px;
     font-weight: 600;
     filter: invert();
+    mix-blend-mode: difference;
 }
 
 .container img {
@@ -23,7 +25,9 @@
 
 .ingredients {
     font-size: 20px;
+    font-weight: 700;
     filter: invert();
+    mix-blend-mode: difference;
     margin: 0 50px 0 50px;
 }
 
@@ -37,4 +41,5 @@
 .extra p {
     font-size: 20px;
     filter: invert();
+    mix-blend-mode: difference;
 }

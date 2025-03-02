@@ -1,0 +1,36 @@
+@keyframes shake {
+    0% { transform: rotate(5deg); }
+  25% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(5deg); }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    padding: 100px 0 150px 0;
+}
+
+.container img {
+    max-width: 100%;
+    width: 800px;
+}
+
+.container img:hover {
+    animation: shake 1s infinite;
+}
+
+.container h1 {
+    color: rgb(223, 2, 2);
+    font-weight: 700;
+    font-size: 70px;
+    padding-bottom: 5px;
+}
+
+.container h2 {
+    color: rgb(223, 2, 2);
+    font-size: 45px;
+}
