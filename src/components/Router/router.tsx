@@ -9,6 +9,7 @@ import Review from "../pages/Review/review";
 import Beans from "../pages/Beans/beans";
 import Layout from "../Layout/layout";
 import Loader from "../Loader/loader";
+import { BeanPage } from "../pages/BeanPage/BeanPage";
 
 const router = createBrowserRouter([
     {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
         children: [
             {index: true, element: <Home/>},
             {path: 'beans', element: <Beans/>},
+            {path: 'bean/:id', element: <BeanPage/>},
             {path: 'facts', element: <Facts/>},
             {path: 'combinations', element: <Combinations/>},
             {path: 'history', element: <History/>},

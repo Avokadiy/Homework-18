@@ -9,13 +9,20 @@ const initialState: TBeansState = {
     currentPage: 0,
     pageSize: 0,
     totalCount: 0,
-    totalPages: 0
+    totalPages: 0,
+    loadedBeanIds: [],
 };
 
 const beansSlice = createSlice({
     name: 'beans',
     initialState,
-    reducers: {},
+    reducers: {
+        resetBeans: (state) => {
+            state.data = [];
+            state.isError = false;
+            state.isLoading = false;
+        }
+    },
     extraReducers: (builder) => {    
         builder.addCase(allBeans.pending, (state) => {
             state.isLoading = true;
@@ -37,5 +44,7 @@ const beansSlice = createSlice({
         });
     },
 });
+
+export const { resetBeans } = beansSlice.actions
 
 export default beansSlice.reducer;

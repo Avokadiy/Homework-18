@@ -11,14 +11,13 @@ export const Card: FC<Props> = ({data}) => {
 
     return (
         <Link 
-            to = {``}//FIX THIS SHIT
+            to = {`/bean/${data.beanId}`}
             className={style.container}
-            style={{background: data.backgroundColor
-            }} 
+            style={{background: data.backgroundColor}} 
         >
+            <h3 style={{color: data.backgroundColor}}>{data.flavorName}</h3>
             <img src={data.imageUrl} alt="Bean image" />
-            <h3>{data.flavorName}</h3>
-            <p>{data.description}</p>
+            <p style={{color: data.backgroundColor}}>{data.description}</p>
         </Link>
     )
 };

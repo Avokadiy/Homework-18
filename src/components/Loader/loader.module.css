@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Lobster;
+    src: url(../../assets/fonts/Lobster.ttf);
+}
+
+.container {
+    display: Block;
+    text-align: center;
+}
+
+.container p {
+    font-family: "Lobster";
+    font-size: 40px;
+    color: red;
+}

@@ -9,7 +9,8 @@ type TPage = {
     currentPage: number,
     pageSize: number,
     totalCount: number,
-    totalPages: number
+    totalPages: number,
+    loadedBeanIds: number[]
 };
 
 export type TBeanState = TState & {

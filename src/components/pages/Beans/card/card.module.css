@@ -1,8 +1,33 @@
 .container {
-    border: 1px solid black
+    border: 1px solid black;
+    padding: 15px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    border-radius: 20px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.container:hover {
+    border-color: lightcoral;
+    opacity: 80%;
 }
 
 .container img {
-    max-height: 200px;
-    height: 200px;
+    max-height: 300px;
+    height: 300px;
+    max-width: 300px;
+    width: 300px;
+    object-fit: contain;
+}
+
+.container h3 {
+    font-weight: 700;
+    filter: invert();
+}
+
+.container p {
+    filter: invert();
 }
