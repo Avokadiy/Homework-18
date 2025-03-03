@@ -5,30 +5,31 @@
 .container h1 {
     font-size: 40px;
     font-weight: 700;
-    filter: invert();
     padding-top: 40px;
-    mix-blend-mode: difference;
+    background-clip: text;
+    filter: invert(1) grayscale(1);
 }
 
 .container h2 {
     font-size: 30px;
     font-weight: 600;
-    filter: invert();
-    mix-blend-mode: difference;
+    background-clip: text;
+    filter: invert(1) grayscale(1);
 }
 
 .container img {
     max-width: 100%;
     width: 500px;
     margin-top: 40px;
+    background-color: inherit;
 }
 
 .ingredients {
     font-size: 20px;
     font-weight: 700;
-    filter: invert();
-    mix-blend-mode: difference;
     margin: 0 50px 0 50px;
+    background-clip: text;
+    filter: invert(1) grayscale(1);
 }
 
 .extra {
@@ -36,10 +37,11 @@
     grid-template-columns: 1fr 1fr;
     margin-top: 40px;
     padding-bottom: 40px;
+    background-color: inherit;
 }
 
 .extra p {
     font-size: 20px;
-    filter: invert();
-    mix-blend-mode: difference;
+    background-clip: text;
+    filter: invert(1) grayscale(1);
 }

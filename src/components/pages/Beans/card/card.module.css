@@ -21,15 +21,18 @@
     max-width: 300px;
     width: 300px;
     object-fit: contain;
+    background: inherit;
 }
 
 .container h3 {
     font-weight: 700;
-    filter: invert();
-    mix-blend-mode: difference;
+    background: inherit;
+    background-clip: text;
+    filter: invert(1) grayscale(1);
 }
 
 .container p {
-    filter: invert();
-    mix-blend-mode: difference;
+    background: inherit;
+    background-clip: text;
+    filter: invert(1) grayscale(1);
 }
