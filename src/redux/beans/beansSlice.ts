@@ -10,7 +10,6 @@ const initialState: TBeansState = {
     pageSize: 0,
     totalCount: 0,
     totalPages: 0,
-    loadedBeanIds: [],
 };
 
 const beansSlice = createSlice({

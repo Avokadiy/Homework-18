@@ -14,15 +14,15 @@ export type TBean = {
 }
 
 export type TFact = {
-    description: string;
     factId: number;
     title: string;
+    description: string;
 };
   
 export type TPage = {
-    currentPage: number;
-    pageSize: number;
     totalCount: number;
+    pageSize: number;
+    currentPage: number;
     totalPages: number;
 };
   

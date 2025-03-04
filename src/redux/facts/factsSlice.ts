@@ -4,18 +4,24 @@ import { facts } from "../../api/facts";
 
 const initialState: TFactsState = {
     isLoading: false,
-    data: [],
     isError: false,
     currentPage: 0,
     pageSize: 0,
     totalCount: 0,
     totalPages: 0,
+    data: [],
 };
 
-export const beansSlice = createSlice({
+export const factsSlice = createSlice({
     name: "facts",
     initialState,
-    reducers: {},
+    reducers: {
+      resetFacts: (state) => {
+        state.data = [];
+        state.isError = false;
+        state.isLoading = false;
+      }
+    },
     extraReducers: (builder) => {
       builder.addCase(facts.pending, (state) => {
         state.isLoading = true;
@@ -38,4 +44,6 @@ export const beansSlice = createSlice({
     },
 });
 
-export default beansSlice.reducer;
+export const {resetFacts} = factsSlice.actions
+
+export default factsSlice.reducer;

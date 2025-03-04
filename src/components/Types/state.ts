@@ -10,7 +10,6 @@ type TPage = {
     pageSize: number,
     totalCount: number,
     totalPages: number,
-    loadedBeanIds: number[]
 };
 
 export type TBeanState = TState & {
