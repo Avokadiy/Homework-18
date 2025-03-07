@@ -1,4 +1,4 @@
-import { TBean, TCombination, TFact, THistory, TRecipe } from "./allTypes";
+import { TBean, TCombinations, TFact, THistory, TRecipe } from "./allTypes";
 
 type TState = {
     isLoading: boolean,
@@ -21,7 +21,7 @@ export type TBeansState = TState & TPage & {
 }
 
 export type TCombinationsState = TState & TPage & {
-    data: TCombination[];
+    data: TCombinations[];
   };
 
 export type TFactsState = TState & TPage & {

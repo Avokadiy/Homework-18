@@ -43,7 +43,7 @@ export type TRecipe = {
     totalTime: string;
 };
   
-export type TCombination = {
+export type TCombinations = {
     combinationId: number;
     name: string;
     tag: string[];

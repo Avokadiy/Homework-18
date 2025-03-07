@@ -15,7 +15,13 @@ const initialState: TCombinationsState = {
 export const combinationsSlice = createSlice({
     name: "combinations",
     initialState,
-    reducers: {},
+    reducers: {
+        resetCombinations: (state) => {
+            state.data = [];
+            state.isError = false;
+            state.isLoading = false;
+        }
+    },
     extraReducers: (builder) => {
         builder.addCase(сombinations.pending, (state) => {
             state.isLoading = true;
@@ -38,4 +44,5 @@ export const combinationsSlice = createSlice({
     },
 });
 
+export const {resetCombinations} = combinationsSlice.actions
 export default combinationsSlice.reducer;

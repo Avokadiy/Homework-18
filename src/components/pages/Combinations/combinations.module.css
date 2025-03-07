@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Lobster;
+    src: url(../../../assets/fonts/Lobster.ttf);
+}
+
+.title {
+    color: red;
+    font-size: 40px;
+    font-family: Lobster;
+    text-align: center;
+}
+
+.scroll {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 50px;
+    justify-content: center;
+}
