@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <div className={style.container}>
             <img src={JellyBellyMainPageLogo} alt="Jelly Belly Logo" />
-            <div>
+            <div className={style.title}>
                 <h1>Welcome to the World of Jelly Belly:</h1>
                 <h2>A rainbow of Flavors Awaits</h2>
             </div>

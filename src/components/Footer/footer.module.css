@@ -1,6 +1,8 @@
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 100%;
     padding: 40px 50px 20px 50px;
     background-color: white;
     border-radius: 40px 40px 0 0;

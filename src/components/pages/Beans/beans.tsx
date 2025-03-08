@@ -17,7 +17,7 @@ export default function Beans() {
 
     useEffect(() => {
         dispatch(allBeans(page));
-    }, [page]);
+    }, [dispatch, page]);
 
     useEffect(() => {
         dispatch(resetBeans());

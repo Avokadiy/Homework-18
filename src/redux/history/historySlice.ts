@@ -15,7 +15,13 @@ const initialState: THistoryState = {
 export const historySlice = createSlice({
     name: "history",
     initialState,
-    reducers: {},
+    reducers: {
+        resetHistory: (state) => {
+            state.data = [];
+            state.isError = false;
+            state.isLoading = false;
+        }
+    },
     extraReducers: (builder) => {
         builder.addCase(history.pending, (state) => {
             state.isLoading = true;
@@ -38,4 +44,5 @@ export const historySlice = createSlice({
     },
 });
 
+export const { resetHistory } = historySlice.actions;
 export default historySlice.reducer;

@@ -44,6 +44,6 @@ export const factsSlice = createSlice({
     },
 });
 
-export const {resetFacts} = factsSlice.actions
+export const {resetFacts} = factsSlice.actions;
 
 export default factsSlice.reducer;
