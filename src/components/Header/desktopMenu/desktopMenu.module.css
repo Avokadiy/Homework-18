@@ -1,0 +1,12 @@
+.link {
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 2px black;
+    background-color: white;
+}
+
+.link:hover {
+    color: darkred;
+}

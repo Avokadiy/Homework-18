@@ -4,8 +4,6 @@ import Facts from "../pages/Facts/facts";
 import NotFound from "../pages/Not Found/notFound";
 import Combinations from "../pages/Combinations/combinations";
 import History from "../pages/History/history";
-import About from "../pages/About/about";
-import Review from "../pages/Review/review";
 import Beans from "../pages/Beans/beans";
 import Layout from "../Layout/layout";
 import Loader from "../Loader/loader";
@@ -23,8 +21,6 @@ const router = createBrowserRouter([
             {path: 'facts', element: <Facts/>},
             {path: 'combinations', element: <Combinations/>},
             {path: 'history', element: <History/>},
-            {path: 'about', element: <About/>},
-            {path: 'review', element: <Review/>},
             {path: '*', element: <NotFound/>}
         ],
     },

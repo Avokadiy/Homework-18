@@ -3,6 +3,10 @@
     src: url(../../../assets/fonts/Lobster.ttf);
 }
 
+.container {
+    min-height: 100vh;
+}
+
 .title {
     color: red;
     font-size: 40px;

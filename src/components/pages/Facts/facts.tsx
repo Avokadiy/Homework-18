@@ -32,7 +32,7 @@ export default function Facts() {
                     <Card key={item.factId} data={item} />
                 ))}
             </div>
-            )};
+            )}
 
             {isError && <Error />}
         </div>
